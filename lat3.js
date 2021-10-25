@@ -109,12 +109,108 @@
 
 // class
 // Only change code below this line
-class Vegetable{
-  constructor(name){
-  	this.name = name
-  }
-}
-// Only change code above this line
+// class Vegetable{
+//   constructor(name){
+//   	this.name = name
+//   }
+// }
+// // Only change code above this line
 
-const carrot = new Vegetable('carrot');
-console.log(carrot.name); // Should display 'carrot'
+// const carrot = new Vegetable('carrot');
+// console.log(carrot.name); // Should display 'carrot'
+
+// class Thermostat{
+// 	constructor(Fahrenheit){
+// 		this._Fahrenheit = Fahrenheit
+// 	}
+
+// 	get temperature(){
+// 		return (5 / 9 )* (this._Fahrenheit - 32)
+// 	}
+
+// 	set temperature(celcius){
+// 		console.log(celcius)
+// 		this._Fahrenheit = (celcius * 9.0) / 5 + 32
+// 	}
+
+// }
+// const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+// let temp = thermos.temperature; // 24.44 in Fahrenheit
+// thermos.temperature = 26;
+// temp = thermos.temperature; // 26 in Fahrenheit
+
+// console.log(temp)
+
+// <html>
+//   <body>
+//     <!-- Only change code below this line -->
+//     <script type="module" src="index.js"></script>
+//     <!-- Only change code above this line -->
+//   </body>
+// </html>
+
+// const uppercaseString = (string) => {
+//   return string.toUpperCase();
+// }
+
+// const lowercaseString = (string) => {
+//   return string.toLowerCase()
+// }
+
+// export {
+// 	uppercaseString,
+// 	lowercaseString
+// }
+
+// import {uppercaseString, lowercaseString} from './string_functions.js'
+
+// uppercaseString("iim marlina")
+// lowercaseString("IIM MARLINA")
+// import * as stringFunctions from './string_functions.js'
+
+// stringFunctions.uppercaseString("hello");
+// stringFunctions.lowercaseString("WORLD!");
+
+// import subtract from './math_functions.js'
+
+// subtract(7, 4)
+
+
+// let responseFromServer = true;
+// const makeServerRequest = new Promise((resolve, reject) => {
+//   // responseFromServer represents a response from a server
+
+//   if(responseFromServer) {
+//     // Change this line
+//     resolve("We got the data")
+//   } else {
+//     // Change this line
+//     reject("Data not received")
+//   }
+// });
+
+// makeServerRequest
+// .then(res => {
+// 	console.log(res)
+// })
+// .catch(err => {
+// 	console.log(err)
+// })
+
+// const makeServerRequest = new Promise((resolve, reject) => {
+//   // responseFromServer is set to true to represent a successful response from a server
+//   let responseFromServer = false;
+
+//   if(responseFromServer) {
+//     resolve("We got the data");
+//   } else {
+//     reject("Data not received");
+//   }
+// });
+
+// makeServerRequest.then(result => {
+// 	console.log(result)
+// })
+// .catch(error => {
+//   console.log(error)
+// });
